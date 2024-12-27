@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Patient Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <span>Tech.Care</span>
+      </div>
+      <div class="navbar-right">
+        <span>Overview</span>
+        <span>Patients</span>
+        <span>Schedule</span>
+        <span>Message</span>
+        <span>Transactions</span>
+        <div class="user-info">
+          <img src="doctor-profile.jpg" alt="Dr. Jose Simmons" class="profile-pic">
+          <div class="profile-details">
+            <span>Dr. Jose Simmons</span>
+            <span>General Practitioner</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <!-- Sidebar with patient list -->
+      <aside class="sidebar">
+        <h3>Patients</h3>
+        <input type="text" placeholder="Search patients..." class="search-input">
+        <ul class="patient-list">
+          <li class="patient-item active">
+            <img src="patient1.jpg" alt="Emily Williams" class="patient-pic">
+            <div>
+              <span>Emily Williams</span><br>
+              <span>Female, 18</span>
+            </div>
+          </li>
+          <li class="patient-item">
+            <img src="patient2.jpg" alt="Ryan Johnson" class="patient-pic">
+            <div>
+              <span>Ryan Johnson</span><br>
+              <span>Male, 45</span>
+            </div>
+          </li>
+          <li class="patient-item">
+            <img src="patient3.jpg" alt="Brandon Mitchell" class="patient-pic">
+            <div>
+              <span>Brandon Mitchell</span><br>
+              <span>Male, 36</span>
+            </div>
+          </li>
+          <li class="patient-item">
+            <img src="patient4.jpg" alt="Jessica Taylor" class="patient-pic">
+            <div>
+              <span>Jessica Taylor</span><br>
+              <span>Female, 28</span>
+            </div>
+          </li>
+          <li class="patient-item">
+            <img src="patient5.jpg" alt="Samantha Johnson" class="patient-pic">
+            <div>
+              <span>Samantha Johnson</span><br>
+              <span>Female, 56</span>
+            </div>
+          </li>
+          <li class="patient-item">
+            <img src="patient6.jpg" alt="Ashley Martinez" class="patient-pic">
+            <div>
+              <span>Ashley Martinez</span><br>
+              <span>Female, 29</span>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Diagnosis History -->
+        <section class="diagnosis-history">
+          <h3>Diagnosis History</h3>
+          <div class="chart-container">
+            <!-- Placeholder for the chart, use actual charting library here -->
+            <div class="chart">
+              <p>Blood Pressure Chart Placeholder</p>
+            </div>
+            <div class="chart-summary">
+              <div class="summary-item">
+                <span>Systolic</span>
+                <span>160</span>
+                <span>Higher than Average</span>
+              </div>
+              <div class="summary-item">
+                <span>Diastolic</span>
+                <span>78</span>
+                <span>Lower than Average</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Vital Signs -->
+        <section class="vital-signs">
+          <div class="vital-card">
+            <h4>Respiratory Rate</h4>
+            <p>20 bpm</p>
+            <span>Normal</span>
+          </div>
+          <div class="vital-card">
+            <h4>Temperature</h4>
+            <p>98.6°F</p>
+            <span>Normal</span>
+          </div>
+          <div class="vital-card">
+            <h4>Heart Rate</h4>
+            <p>78 bpm</p>
+            <span>Lower than Average</span>
+          </div>
+        </section>
+
+        <!-- Patient Info Section -->
+        <section class="patient-info">
+          <img src="patient4.jpg" alt="Jessica Taylor" class="patient-pic">
+          <h3>Jessica Taylor</h3>
+          <p>Date Of Birth: August 23, 1996</p>
+          <p>Gender: Female</p>
+          <p>Contact Info: (415) 555-1234</p>
+          <p>Emergency Contacts: (415) 555-5678</p>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

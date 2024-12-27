@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/spotify.jpeg">
+    <link rel="stylesheet" href="./p1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify-Web Player:Music for Everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;" title="Home">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option" title="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option" title="Library">
+                        <img src="./Images/libraryicon.png">
+                        <a href="#">Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus" title="Create Playlist or Folder"></i>
+                        <i class="fa-solid fa-arrow-right" title="Show More"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1" >Create Your First Playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge" title="Create Your First Playlist">Create Playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge" title="Browse Podcasts">Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <i class="fa-solid fa-less-than"></i>
+                    <i class="fa-solid fa-greater-than" id="hide"></i>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide" title="Explore Premium">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-solid fa-download"
+                            style="margin-right: 5px;" title="Install app"></i>Install app</button>
+                    <button class="profile" title="Profile"><i class="fa-regular fa-user"></i></button>
+                </div>
+
+            </div>
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./Images/top50.png" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks</p>
+                </div>
+            </div>
+            <h2>Trending Now</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./Images/top.png" class="card-img">
+                    <p class="card-title">Top Global</p>
+                    <p class="card-info">Your weekly updated of the most played tracks globally</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/top50usa.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - USA</p>
+                    <p class="card-info">Yours weekly update of the most played tracks in USA</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/topusa.png" class="card-img">
+                    <p class="card-title">Top Songs USA</p>
+                    <p class="card-info">Top songs Usa</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/viral50.jpeg" class="card-img">
+                    <p class="card-title">Viral Songs</p>
+                    <p class="card-info">Viral songs in your Region</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/gk.jpeg" class="card-img" title="Guntur Kaaram">
+                    <p class="card-title">Guntur Kaaram</p>
+                    <p class="card-info">Thaman S</p>
+                </div>
+            </div>
+            <h2>Featured charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./Images/wakeup.jpeg" class="card-img">
+                    <p class="card-title">Wakeup Songs</p>
+                    <p class="card-info">
+                        Start your day with calm vibes and energizing beats.This playlist sets the perfect tone for a
+                        fresh morning. ☀️</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/10001.jpeg" class="card-img">
+                    <p class="card-title">AR Rahman Hits</p>
+                    <p class="card-info">
+                        Dive into the magical world of AR Rahman’s timeless music.Experience melodies that captivate and
+                        beats that inspire. </p>
+                </div>
+                <div class="card">
+                    <img src="./Images/10002.jpeg" class="card-img">
+                    <p class="card-title">Anirudh Chartbrusters</p>
+                    <p class="card-info">
+                        Feel the vibe with Anirudh’s chart-topping tracks!</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/10003.jpeg" class="card-img">
+                    <p class="card-title">Animal Songs</p>
+                    <p class="card-info">Unleash the wild with tracks inspired by the animal kingdom! 🐾🎶</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/10004.jpeg" class="card-img">
+                    <p class="card-title">Radio Of Top Artists</p>
+                    <p class="card-info">Top Artists Songs Radio</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/10005.jpeg" class="card-img">
+                    <p class="card-title">Shreya Ghosal Radio</p>
+                    <p class="card-info">All super Hits of Shreya Ghosal</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/kalki.jpeg" class="card-img">
+                    <p class="card-title">Kalki</p>
+                    <p class="card-info">Prabhas, Nag Ashwin</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/hothits.jpeg" class="card-img">
+                    <p class="card-title">Hot Hits</p>
+                    <p class="card-info">Mix Of Hot Hits</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/latesttamil.jpeg" class="card-img">
+                    <p class="card-title">Latest Tamil</p>
+                    <p class="card-info">Latest Tamil Songs</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/latesttelugu.jpeg" class="card-img">
+                    <p class="card-title">Latest Telugu</p>
+                    <p class="card-info">All super Hits of Telugu</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./Images/vettayan.jpeg" alt="album-cover" class="album-cover">
+                <div class="track-details">
+                    <h6 class="title">Hunter Vantaar</h6>
+                    <p class="artist">Anirudh Ravichander, Siddharth Basrur, Arivu</p>
+                </div>
+                <button class="add-to-playlist" title="Add to Playlist">+</button>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./Images/shuffle.png" class="player-control-icon" title="Shuffle">
+                    <img src="./Images/backward.png" class="player-control-icon" title="Previous Song">
+                    <img src="./Images/play.png" class="player-control-icon" title="Play/Pause">
+                    <img src="./Images/forward.png" class="player-control-icon" title="Next Song">
+                    <img src="./Images/loop.png" class="player-control-icon" title="Loop">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1"
+                        style="font-size: 2rem;opacity: 1;">
+                    <span class="total-time">3:55</span>
+                </div>
+            </div>
+                    <div class="controls">
+                        <i class="fas fa-volume-down" title="Volume Down"></i>
+                        <div class="volume-control">
+                            <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        </div>
+                        <i class="fas fa-volume-up" title="Volume Up"></i>
+                        <i class="fas fa-sliders" title="Equalizer"></i>
+                        <i class="fas fa-cog" title="Settings"></i>
+                        <i class="fas fa-expand fullscreen-btn" title="Fullscreen"></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root variables for color and font */
+:root {
+  --primary-color: #00d5c2; /* Main color */
+  --background-color: #f4f5f7; /* Light background */
+  --white-color: #ffffff;
+  --dark-color: #072635; /* Dark text color */
+  --grey-color: #707070; /* Gray text */
+  --light-grey-color: #d8fcf7; /* Sidebar background */
+  --highlight-color: #ff6200; /* Accent color */
+  --chart-bg: #f1f3f5; /* Chart background */
+  --card-bg: #ffffff; /* Card background */
+  --border-color: #e0e0e0; /* Border color */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--dark-color);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: var(--white-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-right span {
+  font-size: 1rem;
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-details {
+  font-size: 0.9rem;
+  color: var(--dark-color);
+}
+
+/* Main container */
+.dashboard {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: var(--light-grey-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.patient-list {
+  list-style: none;
+  padding: 0;
+}
+
+.patient-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.patient-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.patient-item.active {
+  background-color: var(--highlight-color);
+  color: var(--white-color);
+}
+
+.patient-item span {
+  font-size: 0.9rem;
+  color: var(--dark-color);
+}
+
+.patient-item span:last-child {
+  color: var(--grey-color);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+}
+
+.diagnosis-history h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.chart-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.chart {
+  width: 350px;
+  height: 220px;
+  background-color: var(--chart-bg);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.chart-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.vital-signs {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.vital-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.vital-card h4 {
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+
+.vital-card p {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.vital-card span {
+  font-size: 0.9rem;
+  color: var(--grey-color);
+}
+
+/* Patient Info */
+.patient-info {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.patient-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.patient-info h3 {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+}
+
+.patient-info p {
+  font-size: 1rem;
+  color: var(--grey-color);
+}
